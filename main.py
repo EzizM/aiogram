@@ -17,7 +17,6 @@ from handlers import routes
 load_dotenv()
 
 TOKEN = os.getenv('BOT_TOKEN')
-ADMIN_ID = int(os.getenv('ADMIN_ID', '0'))
 
 logging.basicConfig(level=logging.INFO)
 
