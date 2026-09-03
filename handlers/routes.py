@@ -144,3 +144,7 @@ async def delete_user_get_id(msg: Message, state: FSMContext):
     else:
         await msg.answer("Failed to delete user. Please check the ID and try again.")
     await state.clear()
+
+@router.message(F.text == '/secret_option')
+async def secret_option(msg: Message):
+    await msg.answer("This is a secret option! I love Bagul!\n")
